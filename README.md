@@ -5,6 +5,7 @@ Note Taking Back-end Application using Data Structures in C language.
 It is an implementation of a simple text-based file and folder management system. 
 Users can create folders, add, open, view, and delete notes (text files) within those folders. 
 The program also supports navigation between folders.
+We also have Task Scheduler, where we can create new tasks with different priorities and keep track of what all tasks are pending and what all have been completed.
 
 #CONTENTS
 Data Structures used in the following project are:
