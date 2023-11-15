@@ -1,38 +1,73 @@
-# NOTE MAKER APPLICATION
+# STUDENT-ASSISTANT - NOTES MAKER AND TASK SCHEDULER
 
-#OVERVIEW
-Note Taking Back-end Application using Data Structures in C language. 
-It is an implementation of a simple text-based file and folder management system. 
-Users can create folders, add, open, view, and delete notes (text files) within those folders. 
-The program also supports navigation between folders.
-We also have Task Scheduler, where we can create new tasks with different priorities and keep track of what all tasks are pending and what all have been completed.
+The primary goal of our Student Assistant Application is to provide a platform for users to organize their digital workspace effectively. 
+We aim to streamline the management of notes, subjects, and tasks to enhance productivity and user experience.
 
-#CONTENTS
-Data Structures used in the following project are:
-1) Pointers
-2) Arrays
-3) Linked List
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+HOW TO USE: (IMPORTANT***)
 
-#CODE-BREAKDOWN
-1) struct FileNode and struct FolderNode: These structures represent individual files and folders, respectively. FileNode contains the filename and a pointer to the next file in the list. FolderNode contains the    folder name, pointers to child folders and files, a reference to the parent folder, and a pointer to the next folder in the list.
-2) createFileNode and createFolderNode: These functions allocate memory for new file and folder nodes, respectively, and initialize their fields.
-3) addFileToList and addFolderToList: These functions add a file or folder node to the linked list of files or folders.
-4) deleteFile: This function deletes a file from both the linked list and the file system by using the remove function.
-5) openFileInNotepad: This function opens a file in the Notepad text editor. It uses the system function to execute a command to open the file.
-6) printFileList: This function prints the list of files in the current folder.
-7) freeFileList: This function frees the memory allocated for the linked list of files.
-8) saveToFile and loadFromFile: These functions are used to save the list of files to a text file and load them from a file, respectively.
-9) freeFolderTree: This function frees the memory allocated for the entire folder tree, including all child folders and their contents.
-10) navigateToChildFolder and navigateToParentFolder: These functions are used for folder navigation within the tree.
+1) Please download our notemaker.c file from the Code Tab and save it in a known location.
+2) Now hop on to your computer's terminal in the folder you have saved the program in.
+3) After you are on the terminal window which has the path that leads to the folder your program is in, type the following: gcc notemaker.c
+4) Please note if you do not have C language installed already you must quickly head over to this site:https://www.msys2.org/
+5) Now after you have done running the command in step 3, please type the following in the same terminal: ./a
+6) Voila, you must be able to view a menu of features that you can enjoy with
+   Happy Organising!!
 
- In the main function, the program provides a menu for various actions, such as adding, opening, viewing, and deleting notes, creating new folders, navigating to child or parent folders, and deleting folders. The program continuously loops to receive user input until the user chooses to exit.
- Overall, this code serves as a basic text-based file and folder management system, allowing users to organize notes and folders in a hierarchical structure. It demonstrates the use of linked lists and file I/O operations in C.
+FEATURES:
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+NOTES MANAGER:-
 
-#FUTURE DEVELOPMENTS
+Users can Add, Open, View, and Delete notes.
+Notes are stored in a doubly linked list structure, facilitating easy navigation and organization.
+
+SUBJECT MANAGER:-
+
+Users can Create, Navigate, and Delete subject/topic folders.
+The application supports a hierarchical folder structure stored in doubly linked list, allowing users to organize their notes into a logical and structured framework.
+
+TASK MANAGER:-
+
+A Task Management system is integrated with prioritization.
+Users can add, execute the highest priority task, view the task list, and delete tasks.
+The Tasks are managed using Queue data structure.
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+USER-FRIENDLY INTERFACE: 
+
+The application features a Menu-Driven interface, making it intuitive for users to perform various actions seamlessly.
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+TECHNICAL DETAILS:
+
+PROGRAMMING LANGUAGE:-
+
+The application is implemented in C, providing a balance between performance and simplicity.
+
+DATA STRUCTURES:-
+
+The program utilizes doubly linked list structures for files and folders, and uses queues for tasks, allowing for dynamic and efficient data management.
+
+MEMORY MANAGEMENT:-
+
+Proper memory allocation and deallocation strategies are implemented to ensure the application's stability and reliability.
+
+FILE SYSTEM INTERACTION:-
+
+The application interacts with the file system to manage the creation, deletion, and opening of files.
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+FUTURE DEVELOPMENTS:
+
 1) Front end UI.
 2) Better interaction with system.
 3) Faster execution with better data structure implementation.
 
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+CONCLUSION:
 
-  THANK YOU
+In Conclusion, our STUDENT ASSISTANT Application offers a robust solution for users seeking an organized and efficient digital workspace. Whether you're a student, professional, or anyone in need of an effective note-taking and task management tool, our application aims to simplify your daily activities.
+
+
+THANK YOU!!
   
