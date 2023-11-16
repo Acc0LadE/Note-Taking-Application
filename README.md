@@ -11,8 +11,8 @@ HOW TO USE: (IMPORTANT***)
 3) After you are on the terminal window which has the path that leads to the folder your program is in, type the following: gcc notemaker.c
 4) Please note if you do not have C language installed already you must quickly head over to this site:https://www.msys2.org/
 5) Now after you have done running the command in step 3, please type the following in the same terminal: ./a
-6) Voila, you must be able to view a menu of features that you can enjoy with
-   Happy Organising!!
+6) Voila, you must be able to view a menu of features that you can enjoy with.
+   !!Happy Organising!!
 
 FEATURES:
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
